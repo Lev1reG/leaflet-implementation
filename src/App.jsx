@@ -5,7 +5,8 @@ import "leaflet/dist/leaflet.css";
 import {
   MapContainer,
   TileLayer,
-  Marker
+  Marker,
+  Popup
 } from 'react-leaflet';
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
   const markers = [
     {
       geocode: [-7.773782879038681, 110.37836455755829],
-      popup: 'Gamaforce UGM'
+      popup: 'GAMAFORCE UGM'
     },
     {
       geocode: [-7.770113921502923, 110.37789475890168],
@@ -44,7 +45,11 @@ function App() {
               position={marker.geocode}
               icon={customIcon}
             >
-
+              <Popup>
+                <h2>
+                  {marker.popup}
+                </h2>
+              </Popup>
             </Marker>
           ))
         }
