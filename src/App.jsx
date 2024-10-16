@@ -58,7 +58,7 @@ function App() {
       >
         <TileLayer
           attribution='&copy; <a href="https://gamaforce.wg.ugm.ac.id/">GAMAFORCE UGM</a>'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          url="https://api.maptiler.com/maps/streets-v2/256/{z}/{x}/{y}.png?key=r5rdGo7BGVTWa7OH6yMv"
         />
 
         <MarkerClusterGroup
